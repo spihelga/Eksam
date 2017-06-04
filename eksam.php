@@ -20,7 +20,7 @@ connect_db();
 
 <body>
 	<form action="eksam.php" method="post">
-		<input type="text" name="t1"/>
+		<input type="text" name="t1" placeholder="Kommentaar"/>
 		<input type="submit" value="Lisa kommentaar" name="submit"/> 
 	</form>
 </body>
