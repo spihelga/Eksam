@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){	//Kui submit'i on vajutatud
                 if ($_POST['t1']!="" && mysqli_query($connection, $sql)) {	//Kui tekstiväli pole tühi lisab andmebaasi
                         echo "Kirje sisestatud </br>";
                 } else {
-                        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+                        echo "Error: " . $sql . " mingi jama oli, võib olla jätsid kommentaari lisamata!<br>" . mysqli_error($connection);
                 }
 }
 	$sql = "SELECT * FROM spihelga_VRI";	//Küsib andmebaasist kõik tabelis oleva info
